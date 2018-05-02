@@ -15,7 +15,7 @@ import {
     TouchableHighlight,
 } from 'react-native';
 
-// import HomeHeader from 'src/components/HomeHeader'
+import Header from "./components/Header";
 
 type Props = {};
 export default class App extends Component<Props> {
@@ -60,7 +60,7 @@ export default class App extends Component<Props> {
                         </TouchableHighlight>
                     </View>
                 </View>
-                {/*<HomeHeader></HomeHeader>*/}
+                <Header></Header>
             </View>
         );
     }
