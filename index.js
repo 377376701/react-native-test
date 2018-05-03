@@ -1,4 +1,4 @@
 import { AppRegistry } from 'react-native';
-import Main from './src/page/Main';
+import Step from './src/page/Step';
 
-AppRegistry.registerComponent('kekegdsz', () => Main);
+AppRegistry.registerComponent('kekegdsz', () => Step);
