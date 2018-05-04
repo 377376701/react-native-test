@@ -22,6 +22,7 @@ export default Tab = TabNavigator({
         screen: Home,//当前选项卡加载的页面
         //配置每一个选项卡的样式
         navigationOptions: {
+            header: null,
             tabBarLabel: '首页',//显示的标签文字
             //显示的图片
             tabBarIcon: ({tintColor}) => (
@@ -35,6 +36,7 @@ export default Tab = TabNavigator({
     Type: {
         screen: Type,
         navigationOptions: {
+            header: null,
             tabBarLabel: '分类',
             tabBarIcon: ({tintColor}) => (
                 <Image
@@ -46,6 +48,7 @@ export default Tab = TabNavigator({
     Mine: {
         screen: Mine,
         navigationOptions: {
+            header: null,
             tabBarLabel: '我的',
             tabBarIcon: ({tintColor}) => (
                 <Image
