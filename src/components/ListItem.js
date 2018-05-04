@@ -6,15 +6,30 @@
 
 // 导包基础组件一定要导入react-native的包，不能导入index目录下的Text，view什么的
 import React, {Component} from 'react';
-import {Image, Text, View, StyleSheet, PixelRatio, TextProps as numberOfLines} from 'react-native';
+import {
+    Image,
+    Text,
+    View,
+    StyleSheet,
+    PixelRatio,
+    TextProps as numberOfLines,
+    Alert,
+    TouchableOpacity
+} from 'react-native';
 
 export default class ListItem extends Component {
-    render() {
 
+    show(title) {
+        alert(title);
+    }
+
+    render() {
         return (
-            <View style={styles.list_item}>
-                <Text style={styles.list_item_font} numberOfLines={1}>{this.props.title}</Text>
-            </View>
+            <TouchableOpacity onPress={this.show.bind(this, this.props.title)}>
+                <View style={styles.list_item}>
+                    <Text style={styles.list_item_font} numberOfLines={1}>{this.props.title}</Text>
+                </View>
+            </TouchableOpacity>
         );
     }
 }

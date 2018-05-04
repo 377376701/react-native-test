@@ -20,7 +20,7 @@ import {
 
 type Props = {};
 
-export default class Main extends Component<Props> {
+class Main extends Component<Props> {
 
     static navigationOptions = ({navigation, screenProps}) => ({
 
@@ -70,3 +70,5 @@ const styles = StyleSheet.create({
         alignSelf: 'center',
     },
 });
+
+module.exports = Main;
